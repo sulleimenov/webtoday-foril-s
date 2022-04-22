@@ -60,14 +60,17 @@
 		right: 0
 		bottom: -140px
 		@include media-breakpoint-down(lg)
-			bottom: -100px
+			bottom: -50px
+		@include media-breakpoint-down(md)
+			bottom: -40px
 		img
 			@include media-breakpoint-down(lg)
-				max-width: 300px
+				max-width: 200px
 			@include media-breakpoint-down(md)
-				max-width: 230px
+				max-width: 150px
 			@include media-breakpoint-down(sm)
-				max-width: 180px
+				max-width: 100px
+
 .logo
 	max-width: 66px
 
@@ -137,3 +140,5 @@
 		margin-bottom: 5px
 		a
 			color: $textcolor
+			&:hover
+				color: #26367c
