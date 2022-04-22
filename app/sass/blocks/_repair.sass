@@ -4,8 +4,10 @@
 		display: flex
 		justify-content: space-between
 		column-gap: 30px
+		@include media-breakpoint-down(md)
+			flex-direction: column
 	&__list
-
+		margin-bottom: 30px
 	&__list-item
 		margin-bottom: 15px
 		position: relative
@@ -20,12 +22,13 @@
 			top: 3px
 			left: 0
 			font-size: 8px
-
-
-	&__list-title
-
 	&__list-descr
 		height: 0
 		opacity: 0
 	&__image
 		flex: 1 0 400px
+		@include media-breakpoint-down(lg)
+			flex: 1 0 300px
+		@include media-breakpoint-down(md)
+			flex: auto
+			text-align: center

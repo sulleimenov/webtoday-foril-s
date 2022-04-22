@@ -4,6 +4,7 @@
 .header
 	padding: 40px 0
 	position: relative
+	margin-bottom: 50px
 	@include media-breakpoint-down(md)
 		padding-bottom: 60px
 	&__top
@@ -19,6 +20,7 @@
 			width: 55%
 		@include media-breakpoint-down(md)
 			width: 100%
+			font-size: 18px
 	&__subtitle
 		color: $gray
 		font-size: 16px
@@ -29,6 +31,7 @@
 	&__request
 		display: inline-block
 		margin-top: 30px
+		color: #fff
 	&__burger
 		display: flex
 		flex-direction: column
@@ -83,24 +86,54 @@
 	list-style-type: none
 	@include media-breakpoint-down(lg)
 		position: absolute
-		opacity: 0
-		visibility: hidden
+		opacity: 1
+		visibility: visible
 		flex-direction: column
+		right: 0
+		top: 100px
+		background-color: #fff
+		border-radius: 7px
+		padding: 15px 20px
+		z-index: 999
+		min-width: 250px
+		&:not(.show)
+			opacity: 0
+			visibility: hidden
 	&__item
 		color: $gray
 		margin-right: 40px
 		position: relative
+		padding: 8px 0
 		&:last-child
 			margin-right: 0
 		@include media-breakpoint-down(xl)
 			margin-right: 30px
+		@include media-breakpoint-down(lg)
+			margin-right: 0
 		a
 			color: $gray
 			text-decoration: none
+		&:hover
+			.nav-dropdown
+				opacity: 1
+				visibility: visible
 	&__title
 
 .nav-dropdown
 	position: absolute
+	top: 35px
 	opacity: 0
-	overflow: hidden
+	min-width: 250px
+	visibility: hidden
+	background-color: #fff
+	padding: 10px 20px
+	list-style-type: none
+	border-radius: 5px
+	transition: 0.1s ease
+	@include media-breakpoint-down(lg)
+		right: -20px
+		z-index: 1000
 	&__item
+		margin-bottom: 5px
+		a
+			color: $textcolor

@@ -1,0 +1,38 @@
+.price
+	padding-top: 100px
+	&__title
+		margin-bottom: 30px
+		font-size: 21px
+	&__calc
+		display: flex
+		column-gap: 80px
+		margin-bottom: 40px
+		a
+			color: $textcolor
+	&__item
+		display: grid
+		grid-template-columns: repeat(2, 1fr)
+		column-gap: 30px
+		@include media-breakpoint-down(sm)
+			grid-template-columns: repeat(1, 1fr)
+	&__item-left
+		h4
+			font-size: 15px
+			font-weight: 700
+		ul
+			margin-bottom: 40px
+			list-style-type: none
+			padding-left: 15px
+			li
+				position: relative
+				&::before
+					content: '- '
+	&__item-right
+		text-align: center
+		@include media-breakpoint-down(md)
+			margin-bottom: 40px
+	&__grid
+		span
+			&:last-child
+				font-weight: 700
+

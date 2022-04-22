@@ -2,11 +2,12 @@ $accent: #4A9BFF
 $fontsize: 14px
 $textcolor: #333
 $lineheight: 1.40
-$userfont: 'Gotham Pro', sans-serif
+$userfont: 'Gotham', sans-serif
 
 // Colors
 $dark: #272727
-$gray: #cecece
+$gray: #898989
+$blue: #32498F
 
 // Bootstrap compatible gutter variable => $gutter
 $grid-gutter-width: 30px
@@ -18,6 +19,7 @@ $gutter: $grid-gutter-width
 @import 'node_modules/bootstrap/scss/mixins/_breakpoints.scss'
 @import 'node_modules/bootstrap/scss/bootstrap-grid.scss'
 // @import 'node_modules/bootstrap/scss/_utilities.scss'
+@import "node_modules/@fancyapps/ui/src/fancybox/fancybox.scss"
 
 // Font loaded
 
@@ -28,10 +30,10 @@ $gutter: $grid-gutter-width
 		font-weight: $fontweight
 		src: url($fonturl) format('ttf')
 
-@include font('Gotham Pro', normal, 400, '../fonts/gothampro.ttf')
-@include font('Gotham Pro', italic, 400, '../fonts/gothampro_italic.ttf')
-@include font('Gotham Pro', normal, 700, '../fonts/gothampro_bold.ttf')
-@include font('Gotham Pro', italic, 700, '../fonts/gothampro_bolditalic.ttf')
+@include font('Gotham', light, 300, '../fonts/gothampro-light.eot')
+// @include font('Gotham', italic, 400, '../fonts/gothampro_italic.ttf')
+// @include font('Gotham', normal, 700, '../fonts/gothampro_bold.ttf')
+// @include font('Gotham', italic, 700, '../fonts/gothampro_bolditalic.ttf')
 
 // General css
 

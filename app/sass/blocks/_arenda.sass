@@ -1,0 +1,63 @@
+.item-views
+	display: grid
+	grid-template-columns: repeat(4, 1fr)
+	column-gap: 30px
+	margin: 40px 0
+	@include media-breakpoint-down(lg)
+		grid-template-columns: repeat(2, 1fr)
+		gap: 30px
+	&__item
+		text-align: center
+		img
+			width: 100px
+			height: 100px
+	&__title
+		margin-top: 20px
+		margin-bottom: 6px
+	&__subtitle
+		color: $gray
+		font-size: 12px
+
+
+.rent-form
+	display: grid
+	grid-template-columns: repeat(2, 1fr)
+	column-gap: 40px
+	margin-top: 40px
+	@include media-breakpoint-down(md)
+		grid-template-columns: repeat(1, 1fr)
+	&__left
+		@include media-breakpoint-down(md)
+			margin-bottom: 40px
+	&__title
+		margin-bottom: 30px
+		font-size: 18px
+	&__list
+		margin-bottom: 30px
+	&__list-item
+		display: flex
+		column-gap: 10px
+		margin-bottom: 10px
+		span
+			display: flex
+			align-items: center
+			justify-content: center
+			width: 30px
+			height: 30px
+			min-width: 30px
+			background-color: $blue
+			border-radius: 50%
+			color: #fff
+	&__descr
+	&__download
+		display: inline-block
+		background-color: $blue
+		padding: 10px 25px
+		border-radius: 50px
+		color: #fff
+		text-decoration: none
+		font-size: 12px
+	&__right
+
+.b24-form-header
+	padding: 0 31px 5px!important
