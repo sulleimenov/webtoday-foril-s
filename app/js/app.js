@@ -1,5 +1,6 @@
 // import '~/app/vendor/mmenu/dist/mmenu.js'
 import { $ } from 'jquery'
+import MicroModal from 'micromodal';
 import { Fancybox } from "@fancyapps/ui";
 import mixitup from 'mixitup';
 
@@ -23,6 +24,11 @@ document.addEventListener('DOMContentLoaded', () => {
 	// 		tab.classList.add("is-active");
 	// 	});
 	// });
+
+	MicroModal.init({
+		awaitOpenAnimation: true,
+		awaitCloseAnimation: true,
+	});
 
 	let containerEl = document.querySelector('.rent-products')
 
