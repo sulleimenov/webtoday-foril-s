@@ -1,0 +1,45 @@
+.repair-services
+	display: grid
+	grid-template-columns: repeat(2, 1fr)
+	column-gap: 15px
+	margin-bottom: 100px
+	&__left,
+	&__right
+		display: flex
+		flex-direction: column
+		gap: 15px
+	&__item
+		border: 1px solid #EDEDED
+		padding: 30px
+		cursor: pointer
+		&.active
+			&>.repair-services__body
+				display: block!important
+			&>.repair-services__header
+				&::after
+					transform: rotate(180deg)
+	&__header
+		display: flex
+		align-items: center
+		font-weight: 700
+		font-size: 16px
+		position: relative
+		&::after
+			position: absolute
+			right: 0
+			content: ''
+			background-image: url(../images/icons/down.svg)
+			background-repeat: no-repeat
+			background-position: center
+			width: 12px
+			height: 12px
+		&.active
+			&::after
+				transform: rotate(180deg)
+	&__body
+		margin-top: 20px
+		&:not(.active)
+			display: none
+		ul
+			margin-bottom: 0
+			padding-left: 15px
