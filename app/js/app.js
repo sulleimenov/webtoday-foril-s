@@ -25,21 +25,21 @@ document.addEventListener('DOMContentLoaded', () => {
 	// 	});
 	// });
 
-	function accard() {
-		const btnHeader = document.querySelectorAll('.repair-services__item')
+	// function accard() {
+	// 	const btnHeader = document.querySelectorAll('.repair-services__item')
 		
-		btnHeader.forEach((event) =>
-			event.addEventListener("click", () => {
-				if (event.classList.contains("active")) {
-					event.classList.remove("active");
-				} else {
-					// btnHeader.forEach((event2) => event2.classList.remove("active"));
-					event.classList.add("active");
-				}
-			})
-		);
-	}
-	accard()
+	// 	btnHeader.forEach((event) =>
+	// 		event.addEventListener("click", () => {
+	// 			if (event.classList.contains("active")) {
+	// 				event.classList.remove("active");
+	// 			} else {
+	// 				// btnHeader.forEach((event2) => event2.classList.remove("active"));
+	// 				event.classList.add("active");
+	// 			}
+	// 		})
+	// 	);
+	// }
+	// accard()
 
 	MicroModal.init({
 		awaitOpenAnimation: true,
